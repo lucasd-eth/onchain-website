@@ -1,0 +1,22 @@
+/* Thu nhỏ ảnh */
+.MenubarHeader img {
+    width: 200px; /* Bạn có thể thay đổi giá trị này để phù hợp với kích thước bạn muốn */
+    height: auto; /* Đảm bảo tỷ lệ chiều cao và chiều rộng của ảnh được duy trì */
+  }
+  
+  /* Loại bỏ dấu bullet trong danh sách menu */
+  .menuItems {
+    list-style-type: none; /* Loại bỏ dấu bullet */
+    padding-left: 0; /* Loại bỏ khoảng cách trái mặc định của danh sách */
+  }
+  
+  .menuItems li {
+    margin: 10px 0; /* Khoảng cách giữa các mục trong menu */
+    display: flex; /* Để icon và text nằm ngang */
+    align-items: center; /* Căn giữa icon và text */
+  }
+  
+  .menuItems li svg {
+    margin-right: 8px; /* Khoảng cách giữa icon và text */
+  }
+  
