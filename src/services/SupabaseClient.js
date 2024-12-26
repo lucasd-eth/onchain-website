@@ -21,7 +21,14 @@ export const fetchTransactionsData = async () => {
     }
     return data;
   };
-
+export const fetchTotalbuy_token = async () => {
+    const { data, error } = await supabase.from("totalbuy_token").select("token_address").order("total_sol_volume", { ascending: false }).limit(20);
+      if (error) {
+        console.error("Error fetching data:", error);
+        return [];
+      }
+      return data;
+  }
 // // Import dotenv để load biến môi trường từ file .env
 // import dotenv from 'dotenv';
 // dotenv.config(); // Load các biến môi trường từ file .env
