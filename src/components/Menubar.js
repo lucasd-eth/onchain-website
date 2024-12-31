@@ -7,8 +7,6 @@ import { LuChartCandlestick } from "react-icons/lu";
 import { FaRegStar } from "react-icons/fa";
 import { MdOutlineManageHistory } from "react-icons/md";
 import { LuChartColumnBig } from "react-icons/lu";
-
-
 import './Menubar.css';  // Sửa lại import CSS
 
 const Menubar = () => {
@@ -24,19 +22,19 @@ const Menubar = () => {
             <ul className="menuItems">
                 <li>
                     <FiHome />
-                    <Link to="/">Home</Link>
+                    <Link to="/">Home(focus)</Link>
                 </li>
                 <li>
                     <TbWallet />
-                    <Link to="/WalletDashboard">Wallet Dashboard</Link>
+                    <Link to="/WalletDashboard">Wallet Dashboard(focus)</Link>
                 </li>
                 <li>
                     <IoMdSwap />
-                    <Link to="/Transactions">Transactions</Link>
+                    <Link to="/Transactions">Transactions(focus)</Link>
                 </li>
                 <li>
                     <LuChartCandlestick />
-                    <Link to="/Watchlist">Trending</Link>
+                    <Link to="/Watchlist">Trending(focus)</Link>
                 </li>
                 <li>
                     <FaRegStar />
@@ -44,11 +42,11 @@ const Menubar = () => {
                 </li>
                 <li>
                     <MdOutlineManageHistory />
-                    <Link to="/WalletManagement">WalletManagement</Link>
+                    <Link to="/WalletManagement">WalletManagement(basic)</Link>
                 </li>
                 <li>
                     <LuChartColumnBig />
-                    <Link to="/StatsChart">StatsChart</Link>
+                    <Link to="/StatsChart">StatsChart(basic)</Link>
                 </li>
             </ul>
         </div>

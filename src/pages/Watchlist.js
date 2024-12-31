@@ -13,7 +13,7 @@ const Watchlist = () => {
   useEffect(() => {
     const getWatchlistData = async () => {
       try {
-        const rawWatchlistData = await fetchTotalbuy_token(); // Lấy token_address từ cơ sở dữ liệu
+        const rawWatchlistData = await fetchTotalbuy_token(40); // Lấy token_address từ cơ sở dữ liệu
         const tokenAddresses = rawWatchlistData.map((item) => item.token_address); // Trích xuất danh sách token_address
 
         // Lấy dữ liệu từ Dexscreen API
